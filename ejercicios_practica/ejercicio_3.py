@@ -18,7 +18,9 @@
 # Alumno:
 # Aquí dentro definir la función ordenar
 # def ordenar(lista):
-
+def ordenar(lista):
+    ordenar_numeros = sorted(lista)
+    return ordenar_numeros
 # --------------------------------
 
 
@@ -41,7 +43,8 @@ if __name__ == '__main__':
     # Luego de crear la función invocarla en este lugar,
     # almacenar el valor de retorno en una variable
     # llamada "lista_ordenada"
-
+    lista_ordenada = ordenar(numeros)
+    print(lista_ordenada)
     # lista_ordenada = ordenar(numeros)
 
     # Imprimir en pantalla "lista_ordenada" que tendrá

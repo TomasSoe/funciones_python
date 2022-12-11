@@ -51,6 +51,11 @@ Finalmente dicha función debe retornar la lista de elementos random generados.
 # --------------------------------
 # Aquí dentro definir la función lista_aleatoria
 
+def lista_aleatoria(inicio,fin, cantidad):
+    numeros = []
+    for i in range(cantidad):
+        numeros.append(random.randint(inicio,fin))
+    return numeros
 
 # --------------------------------
 
@@ -60,7 +65,9 @@ if __name__ == '__main__':
     inicio = 0
     fin = 10
     cantidad = 5
-
+    
+    mi_lista_aleatoria = lista_aleatoria(inicio, fin, cantidad)
+    print(f'Mi lista es: {mi_lista_aleatoria}')
     # Alumno: Luego de crear la función invocarla en este lugar:
 
     # mi_lista_aleatoria = lista_aleatoria(inicio, fin, cantidad)

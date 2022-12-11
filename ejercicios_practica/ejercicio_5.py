@@ -17,19 +17,28 @@
 # Alumno:
 # Aquí copiar la función "generar_invitados"
 # ya elaborada
-
+def generar_invitados():
+    lista = []
+    for i in range(3):
+        lista.append(str(input('Ingrese el nombre del invitado:')))
+    return lista
 # --------------------------------
 
 # --------------------------------
 # Alumno:
 # Aquí copiar la función "ordenar"
 # ya elaborada
-
+def ordenar(lista):
+    ordenar_numeros = sorted(lista)
+    return ordenar_numeros
 # --------------------------------
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
 
+    lista_invitados = generar_invitados()
+    lista_invidatos_ordenada = ordenar(lista_invitados)
+    print(f'Los invitados son: {lista_invidatos_ordenada}')
     # Alumno: 
     # Copiar las funciones "generar_invitados" y "ordenar"
     # creadas en los ejercicios anteriores

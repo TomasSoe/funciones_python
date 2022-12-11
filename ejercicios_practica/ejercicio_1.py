@@ -21,6 +21,11 @@
 
 def imprimir_mayor(numero_1, numero_2):
     print("Funcion imprimir mayor")
+    if numero_1 > numero_2:
+        mayor = numero_1
+    else:
+        mayor = numero_2
+    return mayor
     # Alumno:
     # En esta función debe determinar cual de los dos
     # números ingresados por parámetro es mayor
@@ -36,6 +41,6 @@ def imprimir_mayor(numero_1, numero_2):
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
-    imprimir_mayor(2, 10)
-
+    numero_mayor = imprimir_mayor(2, 10)
+    print(f'El numero mayor es {numero_mayor}')
     print("terminamos")
